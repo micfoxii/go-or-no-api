@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2020_05_12_194415) do
   create_table "u_destinations", force: :cascade do |t|
     t.string "name"
     t.string "brief_description"
-    t.string "type"
+    t.string "destination_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
