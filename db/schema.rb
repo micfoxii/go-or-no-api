@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_12_194415) do
+ActiveRecord::Schema.define(version: 2020_05_13_164151) do
+
+  create_table "destinations", force: :cascade do |t|
+    t.string "name"
+    t.string "brief_description"
+    t.string "destination_type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string "state_name"
+    t.string "city_name"
+    t.string "country_name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "reviews", force: :cascade do |t|
     t.text "content"
@@ -22,20 +38,12 @@ ActiveRecord::Schema.define(version: 2020_05_12_194415) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "u_destinations", force: :cascade do |t|
-    t.string "name"
-    t.string "brief_description"
-    t.string "destination_type"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "email"
     t.string "password_digest"
-    t.text "about_me"
+    t.string "about_me"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,2 +1,0 @@
-class UDestination < ApplicationRecord
-end

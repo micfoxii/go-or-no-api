@@ -8,4 +8,6 @@
 
 users = User.create([{first_name: 'Michael', last_name: 'Fox', email:'michael.c.fox.ii@gmail.com', password_digest:'password', about_me:'Aspiring Web Developer'}])
 
-u_destinations = UDestination.create([name: "Rocco's Tacos", brief_description: "Tacos and Tequila Bar", destination_type: "restaurant"])
+location = Location.create([{city_name: "Naples", state_name: "Florida", country_name: "United States"},{city_name: "Indianapolis", state_name: "Indiana", country_name: "United States"}])
+
+destinations = Destination.create([name: "Rocco's Tacos", brief_description: "Tacos and Tequila Bar", destination_type: "restaurant"])

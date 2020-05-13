@@ -5,11 +5,9 @@ one:
   last_name: MyString
   email: MyString
   password_digest: MyString
-  about_me: MyText
 
 two:
   first_name: MyString
   last_name: MyString
   email: MyString
   password_digest: MyString
-  about_me: MyText

@@ -1,8 +1,8 @@
-class ReviewsController < ApplicationController
+class LocationsController < ApplicationController
 
     def index
-        @reviews = Review.all 
-        render json: @reviews
+        @locations = Location.all 
+        render json: @locations
     end
 
     def show
